@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 23 09:19:13 2020
-
-@author: Oliver Faust
-"""
-from PyQt5.QtCore import QRunnable, QMetaObject, Qt, Q_ARG
-from datetime import datetime, timedelta
 """
 Copyright (c) 01.07.2021, Dr Dr Oliver Faust
 
@@ -23,6 +15,8 @@ You should have received a copy of the GNU GPL along with this program.
 If not, please see <https://www.gnu.org/licenses/#GPL>.
 """
 
+from PyQt5.QtCore import QRunnable, QMetaObject, Qt, Q_ARG
+from datetime import datetime, timedelta
 from pycsp.parallel import process, Channel, Parallel, shutdown, retire
 import excelProcessing
 noWorkers = 5
